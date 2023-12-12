@@ -29,7 +29,6 @@ const Form = (props) => {
                 method: "POST",
                 headers: {
                     'Content-type': 'application/json',
-                    'mode': 'no-cors'
                 },
                 body: JSON.stringify({
                     text: todo
