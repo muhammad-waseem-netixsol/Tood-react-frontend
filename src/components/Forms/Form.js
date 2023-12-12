@@ -43,7 +43,7 @@ const Form = (props) => {
                 setTodoIsValid(true);
                 return;
             }
-            fetch("/edit", {
+            fetch("https://rodo-crud-rest-api.vercel.app/edit", {
                 method: "POST",
                 headers: {
                     'Content-type': 'application/json',
