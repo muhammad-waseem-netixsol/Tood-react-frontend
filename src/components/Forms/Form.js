@@ -52,7 +52,7 @@ const Form = (props) => {
                     id: props.editTodo.todo.id,
                     text: edit,
                 })
-            }).then(res => res.json()).then(todo => {
+            }).then(res => JSON.parse(res)).then(todo => {
                 props.onAddedTodo(true);
                 props.closeModal(true);
                 return;
