@@ -11,7 +11,7 @@ const Main = () => {
   // fetching all todos
   useEffect(()=> {
     async function sendRequest(){
-      fetch("/todos").then(resp => resp.json()).then(res => setTodos(res)).catch(err => console.log(err))
+      fetch("https://rodo-crud-rest-api.vercel.app/todos").then(resp => resp.json()).then(res => setTodos(res)).catch(err => console.log(err))
     };
     sendRequest();
   }, [added, deleted]);
