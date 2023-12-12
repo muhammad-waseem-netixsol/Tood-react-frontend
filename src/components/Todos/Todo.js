@@ -10,7 +10,7 @@ const Todo = (props) => {
         event.stopPropagation();
         setIsDeleting(true);
         const todoRemoverHandler = () => {
-            fetch("/remove", {
+            fetch("https://rodo-crud-rest-api.vercel.app/remove", {
                 method: "POST",
                 headers: {
                     'Content-type': 'application/json'
@@ -48,7 +48,7 @@ const Todo = (props) => {
         }
         setMarking(true);
         const markHttp = () => {
-            fetch("/mark", {
+            fetch("https://rodo-crud-rest-api.vercel.app/mark", {
                 method: "POST",
                 headers: {
                     'Content-type': 'application/json'
